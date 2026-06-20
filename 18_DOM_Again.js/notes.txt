@@ -1,0 +1,50 @@
+0: div.day1: div.day2: div.day3: div.daylength: 4[[Prototype]]: HTMLCollection
+ const parent=document.querySelector('.parent')
+VM240:1 Uncaught SyntaxError: Identifier 'parent' has already been declared
+ const parent1=document.querySelector('.parent')
+undefined
+parent1
+<div class=​"parent">​…​</div>​
+console.log(parent1)
+VM354:1 <div class=​"parent">​…​</div>​
+undefined
+console.log(parent1.children)
+VM385:1 HTMLCollection(4) [div.day, div.day, div.day, div.day]
+undefined
+console.log(parent1.children[0])
+VM399:1 <div class=​"day">​MONDAY​</div>​
+undefined
+console.log(parent1.children[0].innerText)
+VM436:1 MONDAY
+undefined
+for(int i=0;i<parent.children
+VM528:1 Uncaught SyntaxError: Unexpected identifier 'i'
+for(let i=0;i<parent.children.length();i++){
+    console.log(parent.children[i].innerText)}
+VM819:1 Uncaught TypeError: parent.children.length is not a function
+    at <anonymous>:1:31
+(anonymous) @ VM819:1
+for(let i=0;i<parent.children.length;i++){
+    console.log(parent.children[i].innerText)}
+VM828:2 MONDAY
+VM828:2 TUESDAY
+VM828:2 WEDNESDAY
+VM828:2 THRUSDAY
+undefined
+for(let i=0;i<parent.children.length;i++){
+    console.log(parent[i].innerText)}
+VM836:2 Uncaught TypeError: Cannot read properties of undefined (reading 'innerText')
+    at <anonymous>:2:27
+(anonymous) @ VM836:2
+console.log(parent.firstElementChild)
+VM960:1 <div class=​"day">​MONDAY​</div>​
+undefined
+console.log(parent.lastElementChild)
+VM974:1 <div class=​"day">​THRUSDAY​</div>​
+undefined
+console.log
+ƒ log() { [native code] }
+console.log("nodes",pare
+VM1115:1 Uncaught SyntaxError: missing ) after argument list
+console.log("nodes",parent.childNodes)
+VM1213:1 nodes NodeList(9) [text, div.day, text, div.day, text, div.day, text, div.day, text]
